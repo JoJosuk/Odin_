@@ -1,0 +1,17 @@
+body {
+    background-color: aqua;
+}
+h1{
+    color: red;
+}
+.box{
+    border: 2px green solid;
+    padding: 1px;
+    margin: 1px;
+
+}
+img{
+    width: 150px;
+    height: 200px;
+    padding: 2cm;
+}
