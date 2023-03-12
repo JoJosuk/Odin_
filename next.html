@@ -10,13 +10,30 @@
     <script src="first.js"></script>
     <script src="second.js"></script>
     <script>
-        greeting();
-    </script>
-    <script>
+        let sms=1;
+        function incri(){
+            sms+=1
+            console.log(sms)
+        }
+        incri()
+        incri()
+        ouet();
+        console.log(sms);
+        function ouet(){
+            const cos=document.createElement('p');
+            document.body.appendChild(cos);
+            cos.textContent = 'eppudra';
+        }
+        ouet();
+        let age = prompt("What is your age? ",15);
+        let welcome = (age<18) ? function(){alert("hello ");} : function() { alert('whatsuoo');};
+        welcome();
+    </script> 
+    <!-- <script>
         const textbox=document.querySelector("#textBox");
         const output = document.querySelector("#output");
 
         textbox.addEventListener('keydown',(event)=>output.textContent=`You pressed "${event.key}".`);
-    </script>
+    </script> -->
 </body>
 </html>
