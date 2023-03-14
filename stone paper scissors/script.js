@@ -1,11 +1,27 @@
 
-const button = document.querySelectorAll('.btn');
+const buttons = document.querySelectorAll('.btn');
 const para =document.querySelector('p');
-
-button.addEventListener('click', updatebutton);
+let choice;
+let intcho;
+buttons.forEach((button)=>{button.addEventListener('click',updatebutton)})
 
 
 function updatebutton(){
-    para.textContent='idk';
+    choice = this.id;
+
+    if (choice =='stone'){
+        intcho=0;
+
+    }
+    else if (choice=='paper'){
+        intcho=1;
+    }
+    else if (choice=='scissors'){
+        intcho=1;
+    }
+
+    playgame();
+
 }
+function playgame()
 console.log('hi')
