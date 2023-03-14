@@ -74,7 +74,7 @@ function playgame(){
         flag=1
     }
     else if (flag==1){
-        para2.textContent=''
+        para2.textContent=' ';
     }
 
 
