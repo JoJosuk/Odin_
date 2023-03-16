@@ -46,6 +46,12 @@
             }
             const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
             console.log('hey',cats.filter(lcat))
+            let myFav = 'hey , my cats are called';
+            for (let i=0;i<cats.length;i++){
+                if (i ==cats.length-1 ) myFav +=`and ${cats[i]}.`
+                else myFav+=`${cats[i]},`
+            }
+            console.log(myFav)
 
         
 
