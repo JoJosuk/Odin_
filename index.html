@@ -32,15 +32,30 @@
            hello()
            hello('jojo')
            let text = "<ul>";
-           let array1=['lambo','jomo','romo'];
+           const array1=['lambo','jomo','romo'];
            for (let i =0;i<array1.length;i++){
             text+='<li>'+array1[i]+'</li>'
 
            }
+           for (let car of array1){
+            console.log(car);
+           }
+        
+            function lcat(cat){
+                return cat.startsWith('L');
+            }
+            const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+            console.log('hey',cats.filter(lcat))
+
+        
+
+
+
            text+='</ul>'
            console.log(text);
            var httml=document.getElementById('hi');
            httml.innerHTML=text;
+           let array2 = array1.map(toString)
         </script>
         <div class="box">dfsdf</div>
         <a href="https://www.google.com">click me</a>
