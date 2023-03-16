@@ -24,12 +24,23 @@
             <li> jello</li>
             <li>pello</li>
         </ol>
+        <div id="hi"></div>
         <script> 
            function hello(name = 'hello'){
             console.log(`hello ${name}`);
            }
            hello()
            hello('jojo')
+           let text = "<ul>";
+           let array1=['lambo','jomo','romo'];
+           for (let i =0;i<array1.length;i++){
+            text+='<li>'+array1[i]+'</li>'
+
+           }
+           text+='</ul>'
+           console.log(text);
+           var httml=document.getElementById('hi');
+           httml.innerHTML=text;
         </script>
         <div class="box">dfsdf</div>
         <a href="https://www.google.com">click me</a>
