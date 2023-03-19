@@ -1,9 +1,18 @@
 body {
     background-color: aqua;
 }
+.hey{
+    background-color: aqua;
+    padding: 20rem;
+}
 h1{
     color: red;
 }
+#idli{
+    padding: 20px;
+    background-color: aliceblue;
+}
+
 .box{
     border: 2px green solid;
     padding: 1px;
