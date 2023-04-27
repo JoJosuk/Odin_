@@ -7,3 +7,8 @@ const somer = document.querySelector("ul");
 console.log(somer.previousElementSibling);
 some.setAttribute('id','idli');
 some.textContent='glory to be'
+const btn = document.querySelector('button');
+btn.addEventListener('click',()=>{
+    alert('potta');
+}
+);

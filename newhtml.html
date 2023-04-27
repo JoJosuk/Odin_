@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glassmorphism Text Example</title>
+	<style>
+		body {
+			background-color: blue;
+		}
+		.glass {
+			background-color: rgba(255, 255, 255, .25);
+			-webkit-background-clip: 'text';
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			margin: 50px auto;
+			max-width: 400px;
+			text-align: center;
+			font-size: 36px;
+			color: #444;
+			font-family: Arial, sans-serif;
+			font-weight: bold;
+		}
+        h1 {
+  position: relative;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+h1::after {
+  backdrop-filter: blur(40px);
+  opacity: 0.4;
+}
+
+	</style>
+</head>
+<body>
+	<div class="glass"><h1>hey</h1></div>
+</body>
+</html>
